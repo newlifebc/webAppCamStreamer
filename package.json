@@ -1,0 +1,26 @@
+{
+  "name": "webappcamstreamer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strontium5/webAppCamStreamer.git"
+  },
+  "author": "Matthew Swarts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strontium5/webAppCamStreamer/issues"
+  },
+  "homepage": "https://github.com/strontium5/webAppCamStreamer#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "socket.io": "^2.2.0"
+  }
+}
