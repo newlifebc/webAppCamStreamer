@@ -8,7 +8,7 @@
 
 'use strict';
 
-const videoElement = document.querySelector('video');
+const videoElement = document.querySelector('#localVideo');
 const videoSelect = document.querySelector('select#videoSource');
 const selectors = [videoSelect];
 
