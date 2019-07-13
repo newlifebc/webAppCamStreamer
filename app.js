@@ -8,7 +8,7 @@ var options = {
     cert: cert
 };
 
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8000;
 var portSSL = 4430;
 
 //https://medium.com/@nileshsingh/everything-about-creating-an-https-server-using-node-js-2fc5c48a8d4e
@@ -16,6 +16,12 @@ const express = require('express');
 const app = express();
 const forceSSL = require('express-force-ssl');
 app.use(forceSSL);
+app.set('forceSSLOptions', {
+    enable301Redirects: true,
+    trustXFPHeader: false,
+    httpsPort: portSSL,
+    sslRequiredMessage: 'SSL Required.'
+});
 const serverSSL = require('https').createServer(options,app).listen(portSSL);
 const server = require('http').createServer(app).listen(port);
 
