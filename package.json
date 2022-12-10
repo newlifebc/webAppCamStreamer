@@ -19,7 +19,7 @@
   "homepage": "https://github.com/strontium5/webAppCamStreamer#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-force-ssl": "^0.3.2",
     "jquery": "^3.4.1",
     "socket.io": "^2.2.0",
